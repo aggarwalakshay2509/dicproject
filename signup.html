@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnAtHome</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <img src="images/icon.png" alt="WebsiteLogo" width="55px">
+                <h1 class="heading"><a href="home.html">Learn At Home</a></h1>
+            </div>
+            <div class="center">
+                <div class="dropdown">
+                    <button type="submit" class="categories">Categories</button>
+                    <div class="categContent">
+                        <a href="courses.html">Web Development</a><hr>
+                        <a href="courses.html">App Development</a><hr>
+                        <a href="courses.html">Finance/Accounting</a><hr>
+                        <a href="courses.html">IT and Software</a><hr>
+                        <a href="courses.html">Design</a><hr>
+                        <a href="courses.html">Marketing</a><hr>
+                        <a href="courses.html">Business</a><hr>
+                        <a href="courses.html">Data Science</a><hr>
+                        <a href="courses.html">Health and Fitness</a><hr>
+                        <a href="courses.html">Music</a>
+                    </div>
+                </div>
+                <div class="searchBar">
+                    <div class="searchType">
+                        <input class="search" type="text" name="search"
+                        placeholder="Search courses ...">
+                    </div>
+                    <div class="searchIcon">
+                        <button type="submit" class="button"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="log">
+                    <a href="login.html"><button type="submit" class="register">Log In</button></a>
+                    <a href="signup.html"><button type="submit" class="register">Sign Up</button></a>
+                </div>
+                <button type="submit" class="forInst"><a href="instructor.html">Join to teach</a></button>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="regForm">
+        <p class="heading">Student Sign Up</p>
+        <form action="#" method="post">
+            <input type="text" name="name" id="name" placeholder="Full Name" required><br>
+            <input type="text" name="contact" id="contact" minlength="10" maxlength="10" placeholder="Contact number" required><br>
+            <textarea name="address" id="address" cols="30" rows="3" placeholder="Address"></textarea><br>
+            <input type="email" name="email" id="email" placeholder="Email" required><br>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <i class="fa fa-eye" id="togglePassword" style="margin-left: -20px;cursor: pointer;position: relative;left: -30px;"></i><br>
+            <button type="submit" class="signBtn">Sign Up</button>
+            <p class="terms">By signing in, you agree to <a href="#">terms and conditions</a></p>
+        </form>
+    </div>
+
+
+    <footer class="foot">
+        <div class="text">
+            <p class="footText">Our goal is to provide a comfortable learning environment from your PC<br> and make learning accessible to anyone who is keen to learn.</p>
+        </div>
+        <div class="list">
+            <a href="courses.html" class="footList">Categories</a>
+            <a href="instructor.html" class="footList">Be a teacher</a>
+            <a href="#" class="footList">News</a>
+            <a href="#" class="footList">About Us</a>
+            <a href="#" class="footList">Contact Us</a>
+        </div>
+        <div class="join">
+            &copy; 2023 LearnAtHome<br>
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://in.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/password.js"></script>
+</body>
+</html>
